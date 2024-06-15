@@ -39,7 +39,7 @@ img {
 
 .card-1, .card-2, .card-3, .card-4 {
     border-radius: 8px;
-    overflow: hidden;
+    
     padding: 15px;
 }
 
