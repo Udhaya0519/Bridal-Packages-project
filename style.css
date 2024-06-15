@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+h2{
+    margin-left: 125px;
+    margin-bottom: -100px;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 20px;
+    padding: 110px;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: -120px;
+}
+button{
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: blue;
+    color: rgba(203, 184, 184, 0.697);
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+#last{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .card-1 img, .card-2 img, .card-3 img, .card-4 img {
+        
+        width: 300px;
+        height: 300px;
+    }
+    .card-1, .card-2, .card-3, .card-4{
+        padding-bottom: 60px;
+    }
+
+    h2 {
+    margin-left: 15px;
+    margin-bottom: -60px;
+    margin-top: 15px;
+    font-size: 28px; /* Adjust as needed */
+    }
+    .card-heading{
+        color: gray;
+        font-size: medium;
+        margin-bottom: 10px;
+        
+    }
+    span{
+        display: block;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+    }
+    button{
+        font-size: 20px;
+        padding: 7px;
+        border-radius: 12px;
+        background-color: blue;
+        color: rgba(203, 184, 184, 0.697);
+        border: none;
+    }
+    #last{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 25px;
+        color: gray;
+    }
+    .package-info{
+        margin-left: 50px;
+    }
+    .package-info p{
+        font-weight: 900;
+        font-size: 15px;
+    }
+    .package-info h3{
+        font-weight: 900;
+        font-size: 15px;
+    }
+}
